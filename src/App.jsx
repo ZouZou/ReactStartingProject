@@ -1,6 +1,5 @@
-// Important:
-// For this project to work on CodeSandbox, image assets ("assets") folder
-// must be stored in the public folder (as it's the case by default in this project)
+import reactImg from "./assets/react-core-concepts.png";
+
 const reactDescriptions = ["Fundamental", "Crucial", "Core"];
 
 function genRandomInt(max) {
@@ -11,7 +10,7 @@ function Header() {
   const description = reactDescriptions[genRandomInt(2)];
   return (
     <header>
-      <img src="assets/react-core-concepts.png" alt="Stylized atom" />
+      <img src={reactImg} alt="Stylized atom" />
       <h1>React Essentials</h1>
       <p>
         {description} React concepts you will need for almost any app you are
